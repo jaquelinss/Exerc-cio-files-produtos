@@ -11,7 +11,7 @@ public class Program {
 
         Locale.setDefault(Locale.US);
 
-        Produto[] produtos = new Produto[3];
+        Produto[] produtos = new Produto[4];
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Digite o diretório: ");

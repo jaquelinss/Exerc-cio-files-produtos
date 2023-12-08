@@ -1,5 +1,7 @@
 package entities;
 
+import java.text.Format;
+
 public class Produto {
 
     private String name;
@@ -44,11 +46,13 @@ public class Produto {
         return value*quantity;
     }
 
+
+
     @Override
     public String toString() {
         return
                 "Name: " + name +
-                ", Value: " + value +
-                ", Quantity: " + quantity;
+                ", Total in stock: " + String.format("%.2f", total());
+
     }
 }
