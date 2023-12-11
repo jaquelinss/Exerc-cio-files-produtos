@@ -50,6 +50,7 @@ public class Program {
             try (BufferedWriter bw = new BufferedWriter(new FileWriter(targetFileStr))) // Vai criar o arquivo out nesse caminho
             { for (Produto item : list) {
                 bw.write(item.toString());
+                bw.newLine();
             }
                 System.out.println( targetFileStr + " Creadted");
 
